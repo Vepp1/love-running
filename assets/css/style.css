@@ -59,7 +59,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image and cover text*/
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -108,7 +108,7 @@ h1, h2 {
     background-color: rgba(241, 109, 107, .7);
 
     bottom: 30px;
-    right: 15px;
+    right: 150px;
 
     position: absolute;
 }
@@ -139,7 +139,7 @@ h1, h2 {
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .left-about-heading {
@@ -147,7 +147,7 @@ hr {
     float: right;
     line-height: 20px;
     clear: both;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .right-about-heading {
@@ -185,12 +185,12 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/ethos-center-image.jpg') no-repeat center;
+    background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
-/* event time */
+/* event times */
 
 #times {
     background-image: url('../images/dublin-city.webp');
@@ -217,7 +217,7 @@ hr {
     color: #fafafa; 
 }
 
-/* -- footer -- */
+/* footer */
 
 footer {
     height: 150px;
@@ -249,4 +249,37 @@ footer {
 
 #photos > img {
     width: 100%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height:1200px;
+        margin: 0 auto;
+
+    }
+
+    #welcome {
+        padding: 30px auto;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
